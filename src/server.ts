@@ -3,6 +3,8 @@ import  express, { Router }  from "express";
 import "./database";
 import { routes } from "./routes";
 import { env } from "process";
+import bcrypt from 'bcrypt'
+import jwt from 'jsonwebtoken'
 
 const app = express();
 
